@@ -38,7 +38,7 @@ export function Countdown() {
           className={styles.countdownButton}
 
         >
-          Cinclo Encerrado
+          Ciclo Encerrado
         </button>
       ): (
         <>
