@@ -34,11 +34,8 @@
   font-size: 6.25rem;
   margin:  0 0.5rem;
 }
-@media screen and ( max-width: 768px){
-  .countdownButton{
-  background: var(--green);
-  }
-}
+
+
 
 .countdownButton{
   width: 100%;
