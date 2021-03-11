@@ -1,7 +1,8 @@
-@media(max-width: 720px){
-  .challengeNotActive  {
-   display: none !important;
- 
+@media screen and ( max-width: 768px){
+  .challengeBoxContainer{
+    display: none !important;
+    background: none;
+    box-shadow: none;
   }
  
   

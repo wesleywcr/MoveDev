@@ -1,6 +1,6 @@
-@media(max-width: 720px){
+@media screen and ( max-width: 768px){
   .profileContainer{
- 
+    margin-left: 9rem;
   }
   
 }

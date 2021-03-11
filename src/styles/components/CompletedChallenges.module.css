@@ -1,3 +1,8 @@
+@media screen and ( max-width: 768px){
+.CompletedContainer  {
+ padding-left: 6rem;
+}
+}
 .CompletedContainer{
   display: flex;
   align-items: center;
