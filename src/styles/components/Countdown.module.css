@@ -1,11 +1,4 @@
-@media screen and ( max-width: 768px){
-.countdownConatainer{
-  margin-left: 9rem;
-}
-.countdownButton{
-  margin-left: 5rem;
-}
-}
+
 .countdownConatainer{
   display: flex;
   align-items: center;
@@ -13,6 +6,7 @@
   font-weight: 600;
   color: var(--title);
 }
+
 
 
 .countdownConatainer > div{
@@ -83,3 +77,17 @@
   color: var(--text);
   cursor: not-allowed;
 }
+
+@media screen and ( max-width: 768px){
+  .countdownConatainer{
+    height: 9rem;
+    margin-left: 7rem;
+    margin-right: 5rem;
+  }
+  .countdownButton{
+  width: 70%;
+ 
+  margin-left: 6rem;
+  padding:  2rem 0.75rem 2rem 0;
+  }
+  }

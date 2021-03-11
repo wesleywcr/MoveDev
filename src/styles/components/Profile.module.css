@@ -1,9 +1,3 @@
-@media screen and ( max-width: 768px){
-  .profileContainer{
-    margin-left: 9rem;
-  }
-  
-}
 .profileContainer{
   display: flex;
   align-items: center;
@@ -34,4 +28,11 @@
 .profileContainer div p img{
   margin-right: 0.5rem;
  
+}
+@media screen and ( max-width: 768px){
+  .profileContainer{
+  justify-content: center;
+  margin-top: 3rem;
+  }
+  
 }
