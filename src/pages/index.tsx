@@ -9,6 +9,7 @@ import styles from '../styles/pages/Home.module.css'
 import { ChallengeBox } from '../components/ChallengeBox'
 import { CountdownContext, CountdownProvider } from '../contexts/CountdownContext'
 import { ChallengesProvider } from '../contexts/ChallengeContext'
+import { ThemeStwither } from '../components/ThemeSwitcher'
 
 interface HomeProps {
   level: number;
@@ -31,7 +32,7 @@ export default function Home(props: HomeProps) {
         </Head>
 
         <ExperienceBar />
-
+        <ThemeStwither />
         <CountdownProvider>
           <section>
             <div >
