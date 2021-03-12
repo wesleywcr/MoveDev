@@ -31,6 +31,7 @@ export default function Home(props: HomeProps) {
         </Head>
 
         <ExperienceBar />
+
         <CountdownProvider>
           <section>
             <div >
