@@ -5,7 +5,10 @@
 }
 
 :root{
+  --colorcountdown: #fff;
+  --colorcountdownline:#f0f2f3;
   --white:#fff;
+  --colorchallenge:#fff;
   --backgroud: #f2f5f5;
   --gray-line: #DCDDE0;
   --text: #666666;
@@ -17,6 +20,16 @@
   --blue-dark: #4953b8;
   --blue-twitter:#2aa9e0;
 
+}
+@media (prefers-color-scheme: dark) {
+  :root.dark{
+    --colorcountdown:#15111a;
+    --colorcountdownline:#0c0b0e;
+    --colorchallenge:#110f14;
+    --backgroud: #000;
+    --text: #e4e3e3;
+    --title: #5965e0;
+  }
 }
 @media(max-width: 1080px){
 html{
