@@ -11,15 +11,16 @@ export default function Home() {
         <a >Home</a>
       </Link>
 
-
-      {!session && <>
-        VC não está logado <br />
-        <button onClick={() => signIn('github', { callbackUrl: 'http://localhost:3000/Home' })}>Sign in</button>
-      </>}
-      {session && <>
-        Vc está logado {session.user.name} <br />
-        <button className={styles.buttonSingOut} onClick={() => signOut()}>Sign out</button>
-      </>}
+      <div>
+        {!session && <>
+          VC não está logado <br />
+          <button onClick={() => signIn('github', { callbackUrl: 'http://localhost:3000/Home' })}>Sign in</button>
+        </>}
+        {session && <>
+          Vc está logado {session.user.name} <br />
+          <button className={styles.buttonSingOut} onClick={() => signOut()}>Sign out</button>
+        </>}
+      </div>
 
     </div>
   )
