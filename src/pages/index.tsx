@@ -1,23 +1,26 @@
 import Link from 'next/link'
 import { signIn, signOut, useSession } from 'next-auth/client'
+import styles from '../styles/pages/Login.module.css'
 
 export default function Home() {
   const [session, loading] = useSession()
 
   return (
-    <div>
+    <div className={styles.container}>
       <Link href="/home">
         <a >Home</a>
       </Link>
 
+
       {!session && <>
-        Not signed in <br />
-        <button onClick={() => signIn()}>Sign in</button>
+        VC não está logado <br />
+        <button onClick={() => signIn('github', { callbackUrl: 'http://localhost:3000/Home' })}>Sign in</button>
       </>}
       {session && <>
-        Signed in as {session.user.email} <br />
-        <button onClick={() => signOut()}>Sign out</button>
+        Vc está logado {session.user.name} <br />
+        <button className={styles.buttonSingOut} onClick={() => signOut()}>Sign out</button>
       </>}
+
     </div>
   )
 }
