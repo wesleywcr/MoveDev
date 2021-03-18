@@ -13,12 +13,13 @@ export default function Home() {
 
       <div>
         {!session && <>
-          VC não está logado <br />
-          <button onClick={() => signIn('github', { callbackUrl: 'http://localhost:3000/Home' })}>Sign in</button>
+          <h1> Bem-vindo</h1>
+          <p>Faça o login com seu Github para começar </p>
+          <button className={styles.buttonSingOut} onClick={() => signIn('github', { callbackUrl: 'http://localhost:3000/Home' })}>LOGIN</button>
         </>}
         {session && <>
-          Vc está logado {session.user.name} <br />
-          <button className={styles.buttonSingOut} onClick={() => signOut()}>Sign out</button>
+          <p>{session.user.name} Deseja sair ?</p>
+          <button className={styles.buttonSingOut} onClick={() => signOut()}>SAIR</button>
         </>}
       </div>
 
