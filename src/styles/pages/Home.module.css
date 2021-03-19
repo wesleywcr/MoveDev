@@ -18,7 +18,6 @@
   align-content: center;
 }
 @media screen and ( max-width: 768px){
-
   .container section{
     grid-template-columns: 1fr;
     gap: 0rem;

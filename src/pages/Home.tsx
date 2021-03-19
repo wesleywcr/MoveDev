@@ -11,6 +11,7 @@ import { CountdownContext, CountdownProvider } from '../contexts/CountdownContex
 import { ChallengesProvider } from '../contexts/ChallengeContext'
 import { ThemeStwither } from '../components/ThemeSwitcher'
 
+import ButtonSignOut from '../components/ButtonSignOut'
 
 
 interface HomeProps {
@@ -33,12 +34,13 @@ export default function Home(props: HomeProps) {
       <div className={styles.container}>
 
         <Head>
-          <title>Inicio | move.it</title>
+          <title>Inicio | move.dev</title>
         </Head>
 
         <ExperienceBar />
 
         <ThemeStwither />
+
         <CountdownProvider>
           <section>
             <div >
@@ -49,10 +51,16 @@ export default function Home(props: HomeProps) {
             <div>
               <ChallengeBox />
             </div>
+
           </section>
         </CountdownProvider>
+        <ButtonSignOut></ButtonSignOut>
       </div>
-    </ChallengesProvider>
+
+    </ChallengesProvider >
+
+
+
   )
 }
 

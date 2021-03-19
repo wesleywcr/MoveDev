@@ -1,0 +1,33 @@
+.buttonSingOut{
+  width: 5rem;
+  height: 3rem;
+  padding: 0.5rem;
+  margin-top: 3rem;
+  margin-left: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  
+  border: 0;
+  border-radius: 5px;
+  background: var(--red);
+  color: var(--white);
+
+  font-size: 1.25rem;
+  font-weight: 600;
+
+}
+.buttonSingOut:hover{
+  background: #681825;
+  transition: 0.2s;
+}
+@media screen and ( max-width: 768px){
+  .buttonSingOut{
+    width: 5rem;
+    height: 3rem;
+    padding: 0.5rem;
+    margin-top: 5rem;
+    margin-left: 40%;
+}
+}
