@@ -7,12 +7,11 @@
 
 </p>
 
-<p align="center"><img src=".github/MoveDev.gif?raw=true"/>
-</p>
-
 <br />
 <p align="center"><img src=".github/login.png"/></p>
+<p align="center"><img src=".github/github.png"/></p>
 <p align="center"><img src=".github/home.png"/></p>
+<p align="center"><img src=".github/desafio.png"/></p>
 
 
 <br />
